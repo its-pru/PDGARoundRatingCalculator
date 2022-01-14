@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDGA Round Rating Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id = "one"> 
+      <div id = "two">
+        <h1> PDGA Round Rating Calculator </h1>
+      </div>
+      <div id = "four">
+        <img src = "https://pbs.twimg.com/media/FBTzR7oWQAEajcR?format=jpg&name=large">
+        <div id="bottomFive">
+          <p> NOTE: This calculator is not exact. Some calculations are being done from data found on <a href="https://www.dgcoursereview.com/">Disc Golf Course Review</a> while some are being done from data found on <a href="https://www.pdga.com/apps/tournament/live/events">PDGA Live</a>. Data from Disc Golf Review can be pretty inacurate while data from PDGA Live will only be innacurate only up to 10 points. </p> 
+        </div>
+        </div>
+        <div id = "five">
+        <form>
+			<label>Round Score:</label><br>
+      <input type="number" name="fname"><br><br>
+      
+      <label for="courses">Choose a course:</label> <br>
+      <select id="course">
+    <option value="56" class="live">Ship Rock Gold</option>
+    <option value="48" class="live"> Ship Rock Silvers</option>
+    <option value="46.6" class="dgr">D.F. Buchmiller Park Blue</option>
+    <option value="50.2" class="dgr">D.F. Buchmiller Park Red</option>
+    <option value="49" class="live">Broken Chains</option>
+    <option value="44.01" class="dgr 44">Kerr Park</option>
+    <option value="50.4" class="dgr">Anson B. Nixon Park Red</option>
+    <option value="53.1" class="dgr">Anson B. Nixon Park Blue</option>
+    <option value="60.5" class="dgr">Anson B. Nixon Park Red</option>
+
+  </select>
+  <br><br>
+  <input type="button" value="Calculate" onclick="result.value = adding(fname); stuff.value = textStuff()">
+  <br>
+  <label>Your round rating was: </label>
+  <output name="result"></output>
+  <div id = "bottom">
+      <p> Note: The calculation used the data from, <output name = "stuff"></output></p>
+    </div>
+   </form> <br>
+      </div>
+    </div>
+  </body>
+</html>
